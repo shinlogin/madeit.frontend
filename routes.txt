@@ -1,0 +1,637 @@
+          home_indices_ads GET    /home/indices/ads(.:format)                 home/indices/ads#index
+                           POST   /home/indices/ads(.:format)                 home/indices/ads#create
+       new_home_indices_ad GET    /home/indices/ads/new(.:format)             home/indices/ads#new
+      edit_home_indices_ad GET    /home/indices/ads/:id/edit(.:format)        home/indices/ads#edit
+           home_indices_ad GET    /home/indices/ads/:id(.:format)             home/indices/ads#show
+                           PUT    /home/indices/ads/:id(.:format)             home/indices/ads#update
+                           DELETE /home/indices/ads/:id(.:format)             home/indices/ads#destroy
+        home_indices_shops GET    /home/indices/shops(.:format)               home/indices/shops#index
+                           POST   /home/indices/shops(.:format)               home/indices/shops#create
+     new_home_indices_shop GET    /home/indices/shops/new(.:format)           home/indices/shops#new
+    edit_home_indices_shop GET    /home/indices/shops/:id/edit(.:format)      home/indices/shops#edit
+         home_indices_shop GET    /home/indices/shops/:id(.:format)           home/indices/shops#show
+                           PUT    /home/indices/shops/:id(.:format)           home/indices/shops#update
+                           DELETE /home/indices/shops/:id(.:format)           home/indices/shops#destroy
+   home_indices_categories GET    /home/indices/categories(.:format)          home/indices/categories#index
+                           POST   /home/indices/categories(.:format)          home/indices/categories#create
+ new_home_indices_category GET    /home/indices/categories/new(.:format)      home/indices/categories#new
+edit_home_indices_category GET    /home/indices/categories/:id/edit(.:format) home/indices/categories#edit
+     home_indices_category GET    /home/indices/categories/:id(.:format)      home/indices/categories#show
+                           PUT    /home/indices/categories/:id(.:format)      home/indices/categories#update
+                           DELETE /home/indices/categories/:id(.:format)      home/indices/categories#destroy
+     home_indices_products GET    /home/indices/products(.:format)            home/indices/products#index
+                           POST   /home/indices/products(.:format)            home/indices/products#create
+  new_home_indices_product GET    /home/indices/products/new(.:format)        home/indices/products#new
+ edit_home_indices_product GET    /home/indices/products/:id/edit(.:format)   home/indices/products#edit
+      home_indices_product GET    /home/indices/products/:id(.:format)        home/indices/products#show
+                           PUT    /home/indices/products/:id(.:format)        home/indices/products#update
+                           DELETE /home/indices/products/:id(.:format)        home/indices/products#destroy
+                           GET    /home/indices/categories(.:format)          home/indices/categories#index
+                           POST   /home/indices/categories(.:format)          home/indices/categories#create
+                           GET    /home/indices/categories/new(.:format)      home/indices/categories#new
+                           GET    /home/indices/categories/:id/edit(.:format) home/indices/categories#edit
+                           GET    /home/indices/categories/:id(.:format)      home/indices/categories#show
+                           PUT    /home/indices/categories/:id(.:format)      home/indices/categories#update
+                           DELETE /home/indices/categories/:id(.:format)      home/indices/categories#destroy
+              home_indices GET    /home/indices(.:format)                     home/indices#index
+                           POST   /home/indices(.:format)                     home/indices#create
+            new_home_index GET    /home/indices/new(.:format)                 home/indices#new
+           edit_home_index GET    /home/indices/:id/edit(.:format)            home/indices#edit
+                home_index GET    /home/indices/:id(.:format)                 home/indices#show
+                           PUT    /home/indices/:id(.:format)                 home/indices#update
+                           DELETE /home/indices/:id(.:format)                 home/indices#destroy
+           home_categories GET    /home/categories(.:format)                  home/categories#index
+                           POST   /home/categories(.:format)                  home/categories#create
+         new_home_category GET    /home/categories/new(.:format)              home/categories#new
+        edit_home_category GET    /home/categories/:id/edit(.:format)         home/categories#edit
+             home_category GET    /home/categories/:id(.:format)              home/categories#show
+                           PUT    /home/categories/:id(.:format)              home/categories#update
+                           DELETE /home/categories/:id(.:format)              home/categories#destroy
+             home_searches GET    /home/searches(.:format)                    home/searches#index
+                           POST   /home/searches(.:format)                    home/searches#create
+           new_home_search GET    /home/searches/new(.:format)                home/searches#new
+          edit_home_search GET    /home/searches/:id/edit(.:format)           home/searches#edit
+               home_search GET    /home/searches/:id(.:format)                home/searches#show
+                           PUT    /home/searches/:id(.:format)                home/searches#update
+                           DELETE /home/searches/:id(.:format)                home/searches#destroy
+                 store_policies GET    /store/policies(.:format)                      store/policies#index
+                                POST   /store/policies(.:format)                      store/policies#create
+               new_store_policy GET    /store/policies/new(.:format)                  store/policies#new
+              edit_store_policy GET    /store/policies/:id/edit(.:format)             store/policies#edit
+                   store_policy GET    /store/policies/:id(.:format)                  store/policies#show
+                                PUT    /store/policies/:id(.:format)                  store/policies#update
+                                DELETE /store/policies/:id(.:format)                  store/policies#destroy
+         store_indices_products GET    /store/indices/products(.:format)              store/indices/products#index
+                                POST   /store/indices/products(.:format)              store/indices/products#create
+      new_store_indices_product GET    /store/indices/products/new(.:format)          store/indices/products#new
+     edit_store_indices_product GET    /store/indices/products/:id/edit(.:format)     store/indices/products#edit
+          store_indices_product GET    /store/indices/products/:id(.:format)          store/indices/products#show
+                                PUT    /store/indices/products/:id(.:format)          store/indices/products#update
+                                DELETE /store/indices/products/:id(.:format)          store/indices/products#destroy
+store_indices_information_index GET    /store/indices/information(.:format)           store/indices/information#index
+                                POST   /store/indices/information(.:format)           store/indices/information#create
+  new_store_indices_information GET    /store/indices/information/new(.:format)       store/indices/information#new
+ edit_store_indices_information GET    /store/indices/information/:id/edit(.:format)  store/indices/information#edit
+      store_indices_information GET    /store/indices/information/:id(.:format)       store/indices/information#show
+                                PUT    /store/indices/information/:id(.:format)       store/indices/information#update
+                                DELETE /store/indices/information/:id(.:format)       store/indices/information#destroy
+              store_indices_ads GET    /store/indices/ads(.:format)                   store/indices/ads#index
+                                POST   /store/indices/ads(.:format)                   store/indices/ads#create
+           new_store_indices_ad GET    /store/indices/ads/new(.:format)               store/indices/ads#new
+          edit_store_indices_ad GET    /store/indices/ads/:id/edit(.:format)          store/indices/ads#edit
+               store_indices_ad GET    /store/indices/ads/:id(.:format)               store/indices/ads#show
+                                PUT    /store/indices/ads/:id(.:format)               store/indices/ads#update
+                                DELETE /store/indices/ads/:id(.:format)               store/indices/ads#destroy
+                  store_indices GET    /store/indices(.:format)                       store/indices#index
+                                POST   /store/indices(.:format)                       store/indices#create
+                new_store_index GET    /store/indices/new(.:format)                   store/indices#new
+               edit_store_index GET    /store/indices/:id/edit(.:format)              store/indices#edit
+                    store_index GET    /store/indices/:id(.:format)                   store/indices#show
+                                PUT    /store/indices/:id(.:format)                   store/indices#update
+                                DELETE /store/indices/:id(.:format)                   store/indices#destroy
+                    home_stores GET    /home/stores(.:format)                         home/stores#index
+                                POST   /home/stores(.:format)                         home/stores#create
+                 new_home_store GET    /home/stores/new(.:format)                     home/stores#new
+                edit_home_store GET    /home/stores/:id/edit(.:format)                home/stores#edit
+                     home_store GET    /home/stores/:id(.:format)                     home/stores#show
+                                PUT    /home/stores/:id(.:format)                     home/stores#update
+                                DELETE /home/stores/:id(.:format)                     home/stores#destroy
+                home_promotions GET    /home/promotions(.:format)                     home/promotions#index
+                                POST   /home/promotions(.:format)                     home/promotions#create
+             new_home_promotion GET    /home/promotions/new(.:format)                 home/promotions#new
+            edit_home_promotion GET    /home/promotions/:id/edit(.:format)            home/promotions#edit
+                 home_promotion GET    /home/promotions/:id(.:format)                 home/promotions#show
+                                PUT    /home/promotions/:id(.:format)                 home/promotions#update
+                                DELETE /home/promotions/:id(.:format)                 home/promotions#destroy
+                    home_events GET    /home/events(.:format)                         home/events#index
+                                POST   /home/events(.:format)                         home/events#create
+                 new_home_event GET    /home/events/new(.:format)                     home/events#new
+                edit_home_event GET    /home/events/:id/edit(.:format)                home/events#edit
+                     home_event GET    /home/events/:id(.:format)                     home/events#show
+                                PUT    /home/events/:id(.:format)                     home/events#update
+                                DELETE /home/events/:id(.:format)                     home/events#destroy
+              home_searches_ads GET    /home/searches/ads(.:format)                   home/searches/ads#index
+                                POST   /home/searches/ads(.:format)                   home/searches/ads#create
+           new_home_searches_ad GET    /home/searches/ads/new(.:format)               home/searches/ads#new
+          edit_home_searches_ad GET    /home/searches/ads/:id/edit(.:format)          home/searches/ads#edit
+               home_searches_ad GET    /home/searches/ads/:id(.:format)               home/searches/ads#show
+                                PUT    /home/searches/ads/:id(.:format)               home/searches/ads#update
+                                DELETE /home/searches/ads/:id(.:format)               home/searches/ads#destroy
+         home_searches_products GET    /home/searches/products(.:format)              home/searches/products#index
+                                POST   /home/searches/products(.:format)              home/searches/products#create
+      new_home_searches_product GET    /home/searches/products/new(.:format)          home/searches/products#new
+     edit_home_searches_product GET    /home/searches/products/:id/edit(.:format)     home/searches/products#edit
+          home_searches_product GET    /home/searches/products/:id(.:format)          home/searches/products#show
+                                PUT    /home/searches/products/:id(.:format)          home/searches/products#update
+                                DELETE /home/searches/products/:id(.:format)          home/searches/products#destroy
+         home_searches_messages GET    /home/searches/messages(.:format)              home/searches/messages#index
+                                POST   /home/searches/messages(.:format)              home/searches/messages#create
+      new_home_searches_message GET    /home/searches/messages/new(.:format)          home/searches/messages#new
+     edit_home_searches_message GET    /home/searches/messages/:id/edit(.:format)     home/searches/messages#edit
+          home_searches_message GET    /home/searches/messages/:id(.:format)          home/searches/messages#show
+                                PUT    /home/searches/messages/:id(.:format)          home/searches/messages#update
+                                DELETE /home/searches/messages/:id(.:format)          home/searches/messages#destroy
+       home_categories_products GET    /home/categories/products(.:format)            home/categories/products#index
+                                POST   /home/categories/products(.:format)            home/categories/products#create
+    new_home_categories_product GET    /home/categories/products/new(.:format)        home/categories/products#new
+   edit_home_categories_product GET    /home/categories/products/:id/edit(.:format)   home/categories/products#edit
+        home_categories_product GET    /home/categories/products/:id(.:format)        home/categories/products#show
+                                PUT    /home/categories/products/:id(.:format)        home/categories/products#update
+                                DELETE /home/categories/products/:id(.:format)        home/categories/products#destroy
+           home_categories_subs GET    /home/categories/subs(.:format)                home/categories/subs#index
+                                POST   /home/categories/subs(.:format)                home/categories/subs#create
+        new_home_categories_sub GET    /home/categories/subs/new(.:format)            home/categories/subs#new
+       edit_home_categories_sub GET    /home/categories/subs/:id/edit(.:format)       home/categories/subs#edit
+            home_categories_sub GET    /home/categories/subs/:id(.:format)            home/categories/subs#show
+                                PUT    /home/categories/subs/:id(.:format)            home/categories/subs#update
+                                DELETE /home/categories/subs/:id(.:format)            home/categories/subs#destroy
+     home_categories_categories GET    /home/categories/categories(.:format)          home/categories/categories#index
+                                POST   /home/categories/categories(.:format)          home/categories/categories#create
+   new_home_categories_category GET    /home/categories/categories/new(.:format)      home/categories/categories#new
+  edit_home_categories_category GET    /home/categories/categories/:id/edit(.:format) home/categories/categories#edit
+       home_categories_category GET    /home/categories/categories/:id(.:format)      home/categories/categories#show
+                                PUT    /home/categories/categories/:id(.:format)      home/categories/categories#update
+                                DELETE /home/categories/categories/:id(.:format)      home/categories/categories#destroy
+               home_indices_ads GET    /home/indices/ads(.:format)                    home/indices/ads#index
+                                POST   /home/indices/ads(.:format)                    home/indices/ads#create
+            new_home_indices_ad GET    /home/indices/ads/new(.:format)                home/indices/ads#new
+           edit_home_indices_ad GET    /home/indices/ads/:id/edit(.:format)           home/indices/ads#edit
+                home_indices_ad GET    /home/indices/ads/:id(.:format)                home/indices/ads#show
+                                PUT    /home/indices/ads/:id(.:format)                home/indices/ads#update
+                                DELETE /home/indices/ads/:id(.:format)                home/indices/ads#destroy
+             home_indices_shops GET    /home/indices/shops(.:format)                  home/indices/shops#index
+                                POST   /home/indices/shops(.:format)                  home/indices/shops#create
+          new_home_indices_shop GET    /home/indices/shops/new(.:format)              home/indices/shops#new
+         edit_home_indices_shop GET    /home/indices/shops/:id/edit(.:format)         home/indices/shops#edit
+              home_indices_shop GET    /home/indices/shops/:id(.:format)              home/indices/shops#show
+                                PUT    /home/indices/shops/:id(.:format)              home/indices/shops#update
+                                DELETE /home/indices/shops/:id(.:format)              home/indices/shops#destroy
+        home_indices_categories GET    /home/indices/categories(.:format)             home/indices/categories#index
+                                POST   /home/indices/categories(.:format)             home/indices/categories#create
+      new_home_indices_category GET    /home/indices/categories/new(.:format)         home/indices/categories#new
+     edit_home_indices_category GET    /home/indices/categories/:id/edit(.:format)    home/indices/categories#edit
+          home_indices_category GET    /home/indices/categories/:id(.:format)         home/indices/categories#show
+                                PUT    /home/indices/categories/:id(.:format)         home/indices/categories#update
+                                DELETE /home/indices/categories/:id(.:format)         home/indices/categories#destroy
+          home_indices_products GET    /home/indices/products(.:format)               home/indices/products#index
+                                POST   /home/indices/products(.:format)               home/indices/products#create
+       new_home_indices_product GET    /home/indices/products/new(.:format)           home/indices/products#new
+      edit_home_indices_product GET    /home/indices/products/:id/edit(.:format)      home/indices/products#edit
+           home_indices_product GET    /home/indices/products/:id(.:format)           home/indices/products#show
+                                PUT    /home/indices/products/:id(.:format)           home/indices/products#update
+                                DELETE /home/indices/products/:id(.:format)           home/indices/products#destroy
+                                GET    /home/indices/categories(.:format)             home/indices/categories#index
+                                POST   /home/indices/categories(.:format)             home/indices/categories#create
+                                GET    /home/indices/categories/new(.:format)         home/indices/categories#new
+                                GET    /home/indices/categories/:id/edit(.:format)    home/indices/categories#edit
+                                GET    /home/indices/categories/:id(.:format)         home/indices/categories#show
+                                PUT    /home/indices/categories/:id(.:format)         home/indices/categories#update
+                                DELETE /home/indices/categories/:id(.:format)         home/indices/categories#destroy
+                   home_indices GET    /home/indices(.:format)                        home/indices#index
+                                POST   /home/indices(.:format)                        home/indices#create
+                 new_home_index GET    /home/indices/new(.:format)                    home/indices#new
+                edit_home_index GET    /home/indices/:id/edit(.:format)               home/indices#edit
+                     home_index GET    /home/indices/:id(.:format)                    home/indices#show
+                                PUT    /home/indices/:id(.:format)                    home/indices#update
+                                DELETE /home/indices/:id(.:format)                    home/indices#destroy
+                home_categories GET    /home/categories(.:format)                     home/categories#index
+                                POST   /home/categories(.:format)                     home/categories#create
+              new_home_category GET    /home/categories/new(.:format)                 home/categories#new
+             edit_home_category GET    /home/categories/:id/edit(.:format)            home/categories#edit
+                  home_category GET    /home/categories/:id(.:format)                 home/categories#show
+                                PUT    /home/categories/:id(.:format)                 home/categories#update
+                                DELETE /home/categories/:id(.:format)                 home/categories#destroy
+                  home_searches GET    /home/searches(.:format)                       home/searches#index
+                                POST   /home/searches(.:format)                       home/searches#create
+                new_home_search GET    /home/searches/new(.:format)                   home/searches#new
+               edit_home_search GET    /home/searches/:id/edit(.:format)              home/searches#edit
+                    home_search GET    /home/searches/:id(.:format)                   home/searches#show
+                                PUT    /home/searches/:id(.:format)                   home/searches#update
+                                DELETE /home/searches/:id(.:format)                   home/searches#destroy
+                  store_manager_policies_payments GET    /store/manager/policies/payments(.:format)                        store/manager/policies/payments#index
+                                                  POST   /store/manager/policies/payments(.:format)                        store/manager/policies/payments#create
+               new_store_manager_policies_payment GET    /store/manager/policies/payments/new(.:format)                    store/manager/policies/payments#new
+              edit_store_manager_policies_payment GET    /store/manager/policies/payments/:id/edit(.:format)               store/manager/policies/payments#edit
+                   store_manager_policies_payment GET    /store/manager/policies/payments/:id(.:format)                    store/manager/policies/payments#show
+                                                  PUT    /store/manager/policies/payments/:id(.:format)                    store/manager/policies/payments#update
+                                                  DELETE /store/manager/policies/payments/:id(.:format)                    store/manager/policies/payments#destroy
+                store_manager_policies_deliveries GET    /store/manager/policies/deliveries(.:format)                      store/manager/policies/deliveries#index
+                                                  POST   /store/manager/policies/deliveries(.:format)                      store/manager/policies/deliveries#create
+              new_store_manager_policies_delivery GET    /store/manager/policies/deliveries/new(.:format)                  store/manager/policies/deliveries#new
+             edit_store_manager_policies_delivery GET    /store/manager/policies/deliveries/:id/edit(.:format)             store/manager/policies/deliveries#edit
+                  store_manager_policies_delivery GET    /store/manager/policies/deliveries/:id(.:format)                  store/manager/policies/deliveries#show
+                                                  PUT    /store/manager/policies/deliveries/:id(.:format)                  store/manager/policies/deliveries#update
+                                                  DELETE /store/manager/policies/deliveries/:id(.:format)                  store/manager/policies/deliveries#destroy
+                   store_manager_indices_statuses GET    /store/manager/indices/statuses(.:format)                         store/manager/indices/statuses#index
+                                                  POST   /store/manager/indices/statuses(.:format)                         store/manager/indices/statuses#create
+                 new_store_manager_indices_status GET    /store/manager/indices/statuses/new(.:format)                     store/manager/indices/statuses#new
+                edit_store_manager_indices_status GET    /store/manager/indices/statuses/:id/edit(.:format)                store/manager/indices/statuses#edit
+                     store_manager_indices_status GET    /store/manager/indices/statuses/:id(.:format)                     store/manager/indices/statuses#show
+                                                  PUT    /store/manager/indices/statuses/:id(.:format)                     store/manager/indices/statuses#update
+                                                  DELETE /store/manager/indices/statuses/:id(.:format)                     store/manager/indices/statuses#destroy
+                      store_manager_indices_users GET    /store/manager/indices/users(.:format)                            store/manager/indices/users#index
+                                                  POST   /store/manager/indices/users(.:format)                            store/manager/indices/users#create
+                   new_store_manager_indices_user GET    /store/manager/indices/users/new(.:format)                        store/manager/indices/users#new
+                  edit_store_manager_indices_user GET    /store/manager/indices/users/:id/edit(.:format)                   store/manager/indices/users#edit
+                       store_manager_indices_user GET    /store/manager/indices/users/:id(.:format)                        store/manager/indices/users#show
+                                                  PUT    /store/manager/indices/users/:id(.:format)                        store/manager/indices/users#update
+                                                  DELETE /store/manager/indices/users/:id(.:format)                        store/manager/indices/users#destroy
+                     store_manager_indices_guides GET    /store/manager/indices/guides(.:format)                           store/manager/indices/guides#index
+                                                  POST   /store/manager/indices/guides(.:format)                           store/manager/indices/guides#create
+                  new_store_manager_indices_guide GET    /store/manager/indices/guides/new(.:format)                       store/manager/indices/guides#new
+                 edit_store_manager_indices_guide GET    /store/manager/indices/guides/:id/edit(.:format)                  store/manager/indices/guides#edit
+                      store_manager_indices_guide GET    /store/manager/indices/guides/:id(.:format)                       store/manager/indices/guides#show
+                                                  PUT    /store/manager/indices/guides/:id(.:format)                       store/manager/indices/guides#update
+                                                  DELETE /store/manager/indices/guides/:id(.:format)                       store/manager/indices/guides#destroy
+           home_categories_products_indices_users GET    /home/categories/products/indices/users(.:format)                 home/categories/products/indices/users#index
+                                                  POST   /home/categories/products/indices/users(.:format)                 home/categories/products/indices/users#create
+        new_home_categories_products_indices_user GET    /home/categories/products/indices/users/new(.:format)             home/categories/products/indices/users#new
+       edit_home_categories_products_indices_user GET    /home/categories/products/indices/users/:id/edit(.:format)        home/categories/products/indices/users#edit
+            home_categories_products_indices_user GET    /home/categories/products/indices/users/:id(.:format)             home/categories/products/indices/users#show
+                                                  PUT    /home/categories/products/indices/users/:id(.:format)             home/categories/products/indices/users#update
+                                                  DELETE /home/categories/products/indices/users/:id(.:format)             home/categories/products/indices/users#destroy
+           home_categories_products_indices_shops GET    /home/categories/products/indices/shops(.:format)                 home/categories/products/indices/shops#index
+                                                  POST   /home/categories/products/indices/shops(.:format)                 home/categories/products/indices/shops#create
+        new_home_categories_products_indices_shop GET    /home/categories/products/indices/shops/new(.:format)             home/categories/products/indices/shops#new
+       edit_home_categories_products_indices_shop GET    /home/categories/products/indices/shops/:id/edit(.:format)        home/categories/products/indices/shops#edit
+            home_categories_products_indices_shop GET    /home/categories/products/indices/shops/:id(.:format)             home/categories/products/indices/shops#show
+                                                  PUT    /home/categories/products/indices/shops/:id(.:format)             home/categories/products/indices/shops#update
+                                                  DELETE /home/categories/products/indices/shops/:id(.:format)             home/categories/products/indices/shops#destroy
+           home_categories_products_indices_carts GET    /home/categories/products/indices/carts(.:format)                 home/categories/products/indices/carts#index
+                                                  POST   /home/categories/products/indices/carts(.:format)                 home/categories/products/indices/carts#create
+        new_home_categories_products_indices_cart GET    /home/categories/products/indices/carts/new(.:format)             home/categories/products/indices/carts#new
+       edit_home_categories_products_indices_cart GET    /home/categories/products/indices/carts/:id/edit(.:format)        home/categories/products/indices/carts#edit
+            home_categories_products_indices_cart GET    /home/categories/products/indices/carts/:id(.:format)             home/categories/products/indices/carts#show
+                                                  PUT    /home/categories/products/indices/carts/:id(.:format)             home/categories/products/indices/carts#update
+                                                  DELETE /home/categories/products/indices/carts/:id(.:format)             home/categories/products/indices/carts#destroy
+           home_categories_products_indices_likes GET    /home/categories/products/indices/likes(.:format)                 home/categories/products/indices/likes#index
+                                                  POST   /home/categories/products/indices/likes(.:format)                 home/categories/products/indices/likes#create
+        new_home_categories_products_indices_like GET    /home/categories/products/indices/likes/new(.:format)             home/categories/products/indices/likes#new
+       edit_home_categories_products_indices_like GET    /home/categories/products/indices/likes/:id/edit(.:format)        home/categories/products/indices/likes#edit
+            home_categories_products_indices_like GET    /home/categories/products/indices/likes/:id(.:format)             home/categories/products/indices/likes#show
+                                                  PUT    /home/categories/products/indices/likes/:id(.:format)             home/categories/products/indices/likes#update
+                                                  DELETE /home/categories/products/indices/likes/:id(.:format)             home/categories/products/indices/likes#destroy
+        home_categories_products_indices_policies GET    /home/categories/products/indices/policies(.:format)              home/categories/products/indices/policies#index
+                                                  POST   /home/categories/products/indices/policies(.:format)              home/categories/products/indices/policies#create
+      new_home_categories_products_indices_policy GET    /home/categories/products/indices/policies/new(.:format)          home/categories/products/indices/policies#new
+     edit_home_categories_products_indices_policy GET    /home/categories/products/indices/policies/:id/edit(.:format)     home/categories/products/indices/policies#edit
+          home_categories_products_indices_policy GET    /home/categories/products/indices/policies/:id(.:format)          home/categories/products/indices/policies#show
+                                                  PUT    /home/categories/products/indices/policies/:id(.:format)          home/categories/products/indices/policies#update
+                                                  DELETE /home/categories/products/indices/policies/:id(.:format)          home/categories/products/indices/policies#destroy
+    home_categories_products_indices_descriptions GET    /home/categories/products/indices/descriptions(.:format)          home/categories/products/indices/descriptions#index
+                                                  POST   /home/categories/products/indices/descriptions(.:format)          home/categories/products/indices/descriptions#create
+ new_home_categories_products_indices_description GET    /home/categories/products/indices/descriptions/new(.:format)      home/categories/products/indices/descriptions#new
+edit_home_categories_products_indices_description GET    /home/categories/products/indices/descriptions/:id/edit(.:format) home/categories/products/indices/descriptions#edit
+     home_categories_products_indices_description GET    /home/categories/products/indices/descriptions/:id(.:format)      home/categories/products/indices/descriptions#show
+                                                  PUT    /home/categories/products/indices/descriptions/:id(.:format)      home/categories/products/indices/descriptions#update
+                                                  DELETE /home/categories/products/indices/descriptions/:id(.:format)      home/categories/products/indices/descriptions#destroy
+          home_categories_products_indices_photos GET    /home/categories/products/indices/photos(.:format)                home/categories/products/indices/photos#index
+                                                  POST   /home/categories/products/indices/photos(.:format)                home/categories/products/indices/photos#create
+       new_home_categories_products_indices_photo GET    /home/categories/products/indices/photos/new(.:format)            home/categories/products/indices/photos#new
+      edit_home_categories_products_indices_photo GET    /home/categories/products/indices/photos/:id/edit(.:format)       home/categories/products/indices/photos#edit
+           home_categories_products_indices_photo GET    /home/categories/products/indices/photos/:id(.:format)            home/categories/products/indices/photos#show
+                                                  PUT    /home/categories/products/indices/photos/:id(.:format)            home/categories/products/indices/photos#update
+                                                  DELETE /home/categories/products/indices/photos/:id(.:format)            home/categories/products/indices/photos#destroy
+                       home_cart_indices_products GET    /home/cart/indices/products(.:format)                             home/cart/indices/products#index
+                                                  POST   /home/cart/indices/products(.:format)                             home/cart/indices/products#create
+                    new_home_cart_indices_product GET    /home/cart/indices/products/new(.:format)                         home/cart/indices/products#new
+                   edit_home_cart_indices_product GET    /home/cart/indices/products/:id/edit(.:format)                    home/cart/indices/products#edit
+                        home_cart_indices_product GET    /home/cart/indices/products/:id(.:format)                         home/cart/indices/products#show
+                                                  PUT    /home/cart/indices/products/:id(.:format)                         home/cart/indices/products#update
+                                                  DELETE /home/cart/indices/products/:id(.:format)                         home/cart/indices/products#destroy
+                                  home_cart_fails GET    /home/cart/fails(.:format)                                        home/cart/fails#index
+                                                  POST   /home/cart/fails(.:format)                                        home/cart/fails#create
+                               new_home_cart_fail GET    /home/cart/fails/new(.:format)                                    home/cart/fails#new
+                              edit_home_cart_fail GET    /home/cart/fails/:id/edit(.:format)                               home/cart/fails#edit
+                                   home_cart_fail GET    /home/cart/fails/:id(.:format)                                    home/cart/fails#show
+                                                  PUT    /home/cart/fails/:id(.:format)                                    home/cart/fails#update
+                                                  DELETE /home/cart/fails/:id(.:format)                                    home/cart/fails#destroy
+                              home_cart_successes GET    /home/cart/successes(.:format)                                    home/cart/successes#index
+                                                  POST   /home/cart/successes(.:format)                                    home/cart/successes#create
+                            new_home_cart_success GET    /home/cart/successes/new(.:format)                                home/cart/successes#new
+                           edit_home_cart_success GET    /home/cart/successes/:id/edit(.:format)                           home/cart/successes#edit
+                                home_cart_success GET    /home/cart/successes/:id(.:format)                                home/cart/successes#show
+                                                  PUT    /home/cart/successes/:id(.:format)                                home/cart/successes#update
+                                                  DELETE /home/cart/successes/:id(.:format)                                home/cart/successes#destroy
+                      home_cart_information_index GET    /home/cart/information(.:format)                                  home/cart/information#index
+                                                  POST   /home/cart/information(.:format)                                  home/cart/information#create
+                        new_home_cart_information GET    /home/cart/information/new(.:format)                              home/cart/information#new
+                       edit_home_cart_information GET    /home/cart/information/:id/edit(.:format)                         home/cart/information#edit
+                            home_cart_information GET    /home/cart/information/:id(.:format)                              home/cart/information#show
+                                                  PUT    /home/cart/information/:id(.:format)                              home/cart/information#update
+                                                  DELETE /home/cart/information/:id(.:format)                              home/cart/information#destroy
+                                home_cart_indices GET    /home/cart/indices(.:format)                                      home/cart/indices#index
+                                                  POST   /home/cart/indices(.:format)                                      home/cart/indices#create
+                              new_home_cart_index GET    /home/cart/indices/new(.:format)                                  home/cart/indices#new
+                             edit_home_cart_index GET    /home/cart/indices/:id/edit(.:format)                             home/cart/indices#edit
+                                  home_cart_index GET    /home/cart/indices/:id(.:format)                                  home/cart/indices#show
+                                                  PUT    /home/cart/indices/:id(.:format)                                  home/cart/indices#update
+                                                  DELETE /home/cart/indices/:id(.:format)                                  home/cart/indices#destroy
+                                   stores_reports GET    /stores/reports(.:format)                                         stores/reports#index
+                                                  POST   /stores/reports(.:format)                                         stores/reports#create
+                                new_stores_report GET    /stores/reports/new(.:format)                                     stores/reports#new
+                               edit_stores_report GET    /stores/reports/:id/edit(.:format)                                stores/reports#edit
+                                    stores_report GET    /stores/reports/:id(.:format)                                     stores/reports#show
+                                                  PUT    /stores/reports/:id(.:format)                                     stores/reports#update
+                                                  DELETE /stores/reports/:id(.:format)                                     stores/reports#destroy
+                 home_categories_products_reports GET    /home/categories/products/reports(.:format)                       home/categories/products/reports#index
+                                                  POST   /home/categories/products/reports(.:format)                       home/categories/products/reports#create
+              new_home_categories_products_report GET    /home/categories/products/reports/new(.:format)                   home/categories/products/reports#new
+             edit_home_categories_products_report GET    /home/categories/products/reports/:id/edit(.:format)              home/categories/products/reports#edit
+                  home_categories_products_report GET    /home/categories/products/reports/:id(.:format)                   home/categories/products/reports#show
+                                                  PUT    /home/categories/products/reports/:id(.:format)                   home/categories/products/reports#update
+                                                  DELETE /home/categories/products/reports/:id(.:format)                   home/categories/products/reports#destroy
+                 home_categories_products_indices GET    /home/categories/products/indices(.:format)                       home/categories/products/indices#index
+                                                  POST   /home/categories/products/indices(.:format)                       home/categories/products/indices#create
+               new_home_categories_products_index GET    /home/categories/products/indices/new(.:format)                   home/categories/products/indices#new
+              edit_home_categories_products_index GET    /home/categories/products/indices/:id/edit(.:format)              home/categories/products/indices#edit
+                   home_categories_products_index GET    /home/categories/products/indices/:id(.:format)                   home/categories/products/indices#show
+                                                  PUT    /home/categories/products/indices/:id(.:format)                   home/categories/products/indices#update
+                                                  DELETE /home/categories/products/indices/:id(.:format)                   home/categories/products/indices#destroy
+          store_manager_messages_folders_messages GET    /store/manager/messages/folders/messages(.:format)                store/manager/messages/folders/messages#index
+                                                  POST   /store/manager/messages/folders/messages(.:format)                store/manager/messages/folders/messages#create
+       new_store_manager_messages_folders_message GET    /store/manager/messages/folders/messages/new(.:format)            store/manager/messages/folders/messages#new
+      edit_store_manager_messages_folders_message GET    /store/manager/messages/folders/messages/:id/edit(.:format)       store/manager/messages/folders/messages#edit
+           store_manager_messages_folders_message GET    /store/manager/messages/folders/messages/:id(.:format)            store/manager/messages/folders/messages#show
+                                                  PUT    /store/manager/messages/folders/messages/:id(.:format)            store/manager/messages/folders/messages#update
+                                                  DELETE /store/manager/messages/folders/messages/:id(.:format)            store/manager/messages/folders/messages#destroy
+                   store_manager_messages_unreads GET    /store/manager/messages/unreads(.:format)                         store/manager/messages/unreads#index
+                                                  POST   /store/manager/messages/unreads(.:format)                         store/manager/messages/unreads#create
+                new_store_manager_messages_unread GET    /store/manager/messages/unreads/new(.:format)                     store/manager/messages/unreads#new
+               edit_store_manager_messages_unread GET    /store/manager/messages/unreads/:id/edit(.:format)                store/manager/messages/unreads#edit
+                    store_manager_messages_unread GET    /store/manager/messages/unreads/:id(.:format)                     store/manager/messages/unreads#show
+                                                  PUT    /store/manager/messages/unreads/:id(.:format)                     store/manager/messages/unreads#update
+                                                  DELETE /store/manager/messages/unreads/:id(.:format)                     store/manager/messages/unreads#destroy
+                     store_manager_messages_reads GET    /store/manager/messages/reads(.:format)                           store/manager/messages/reads#index
+                                                  POST   /store/manager/messages/reads(.:format)                           store/manager/messages/reads#create
+                  new_store_manager_messages_read GET    /store/manager/messages/reads/new(.:format)                       store/manager/messages/reads#new
+                 edit_store_manager_messages_read GET    /store/manager/messages/reads/:id/edit(.:format)                  store/manager/messages/reads#edit
+                      store_manager_messages_read GET    /store/manager/messages/reads/:id(.:format)                       store/manager/messages/reads#show
+                                                  PUT    /store/manager/messages/reads/:id(.:format)                       store/manager/messages/reads#update
+                                                  DELETE /store/manager/messages/reads/:id(.:format)                       store/manager/messages/reads#destroy
+                   store_manager_messages_folders GET    /store/manager/messages/folders(.:format)                         store/manager/messages/folders#index
+                                                  POST   /store/manager/messages/folders(.:format)                         store/manager/messages/folders#create
+                new_store_manager_messages_folder GET    /store/manager/messages/folders/new(.:format)                     store/manager/messages/folders#new
+               edit_store_manager_messages_folder GET    /store/manager/messages/folders/:id/edit(.:format)                store/manager/messages/folders#edit
+                    store_manager_messages_folder GET    /store/manager/messages/folders/:id(.:format)                     store/manager/messages/folders#show
+                                                  PUT    /store/manager/messages/folders/:id(.:format)                     store/manager/messages/folders#update
+                                                  DELETE /store/manager/messages/folders/:id(.:format)                     store/manager/messages/folders#destroy
+                           store_manager_messages GET    /store/manager/messages(.:format)                                 store/manager/messages#index
+                                                  POST   /store/manager/messages(.:format)                                 store/manager/messages#create
+                        new_store_manager_message GET    /store/manager/messages/new(.:format)                             store/manager/messages#new
+                       edit_store_manager_message GET    /store/manager/messages/:id/edit(.:format)                        store/manager/messages#edit
+                            store_manager_message GET    /store/manager/messages/:id(.:format)                             store/manager/messages#show
+                                                  PUT    /store/manager/messages/:id(.:format)                             store/manager/messages#update
+                                                  DELETE /store/manager/messages/:id(.:format)                             store/manager/messages#destroy
+                         store_manager_promotions GET    /store/manager/promotions(.:format)                               store/manager/promotions#index
+                                                  POST   /store/manager/promotions(.:format)                               store/manager/promotions#create
+                      new_store_manager_promotion GET    /store/manager/promotions/new(.:format)                           store/manager/promotions#new
+                     edit_store_manager_promotion GET    /store/manager/promotions/:id/edit(.:format)                      store/manager/promotions#edit
+                          store_manager_promotion GET    /store/manager/promotions/:id(.:format)                           store/manager/promotions#show
+                                                  PUT    /store/manager/promotions/:id(.:format)                           store/manager/promotions#update
+                                                  DELETE /store/manager/promotions/:id(.:format)                           store/manager/promotions#destroy
+                                store_manager_ads GET    /store/manager/ads(.:format)                                      store/manager/ads#index
+                                                  POST   /store/manager/ads(.:format)                                      store/manager/ads#create
+                             new_store_manager_ad GET    /store/manager/ads/new(.:format)                                  store/manager/ads#new
+                            edit_store_manager_ad GET    /store/manager/ads/:id/edit(.:format)                             store/manager/ads#edit
+                                 store_manager_ad GET    /store/manager/ads/:id(.:format)                                  store/manager/ads#show
+                                                  PUT    /store/manager/ads/:id(.:format)                                  store/manager/ads#update
+                                                  DELETE /store/manager/ads/:id(.:format)                                  store/manager/ads#destroy
+                         store_manager_statistics GET    /store/manager/statistics(.:format)                               store/manager/statistics#index
+                                                  POST   /store/manager/statistics(.:format)                               store/manager/statistics#create
+                      new_store_manager_statistic GET    /store/manager/statistics/new(.:format)                           store/manager/statistics#new
+                     edit_store_manager_statistic GET    /store/manager/statistics/:id/edit(.:format)                      store/manager/statistics#edit
+                          store_manager_statistic GET    /store/manager/statistics/:id(.:format)                           store/manager/statistics#show
+                                                  PUT    /store/manager/statistics/:id(.:format)                           store/manager/statistics#update
+                                                  DELETE /store/manager/statistics/:id(.:format)                           store/manager/statistics#destroy
+                   store_manager_products_reviews GET    /store/manager/products/reviews(.:format)                         store/manager/products/reviews#index
+                                                  POST   /store/manager/products/reviews(.:format)                         store/manager/products/reviews#create
+                new_store_manager_products_review GET    /store/manager/products/reviews/new(.:format)                     store/manager/products/reviews#new
+               edit_store_manager_products_review GET    /store/manager/products/reviews/:id/edit(.:format)                store/manager/products/reviews#edit
+                    store_manager_products_review GET    /store/manager/products/reviews/:id(.:format)                     store/manager/products/reviews#show
+                                                  PUT    /store/manager/products/reviews/:id(.:format)                     store/manager/products/reviews#update
+                                                  DELETE /store/manager/products/reviews/:id(.:format)                     store/manager/products/reviews#destroy
+                            store_manager_reviews GET    /store/manager/reviews(.:format)                                  store/manager/reviews#index
+                                                  POST   /store/manager/reviews(.:format)                                  store/manager/reviews#create
+                         new_store_manager_review GET    /store/manager/reviews/new(.:format)                              store/manager/reviews#new
+                        edit_store_manager_review GET    /store/manager/reviews/:id/edit(.:format)                         store/manager/reviews#edit
+                             store_manager_review GET    /store/manager/reviews/:id(.:format)                              store/manager/reviews#show
+                                                  PUT    /store/manager/reviews/:id(.:format)                              store/manager/reviews#update
+                                                  DELETE /store/manager/reviews/:id(.:format)                              store/manager/reviews#destroy
+                             store_manager_orders GET    /store/manager/orders(.:format)                                   store/manager/orders#index
+                                                  POST   /store/manager/orders(.:format)                                   store/manager/orders#create
+                          new_store_manager_order GET    /store/manager/orders/new(.:format)                               store/manager/orders#new
+                         edit_store_manager_order GET    /store/manager/orders/:id/edit(.:format)                          store/manager/orders#edit
+                              store_manager_order GET    /store/manager/orders/:id(.:format)                               store/manager/orders#show
+                                                  PUT    /store/manager/orders/:id(.:format)                               store/manager/orders#update
+                                                  DELETE /store/manager/orders/:id(.:format)                               store/manager/orders#destroy
+                      store_manager_products_adds GET    /store/manager/products/adds(.:format)                            store/manager/products/adds#index
+                                                  POST   /store/manager/products/adds(.:format)                            store/manager/products/adds#create
+                   new_store_manager_products_add GET    /store/manager/products/adds/new(.:format)                        store/manager/products/adds#new
+                  edit_store_manager_products_add GET    /store/manager/products/adds/:id/edit(.:format)                   store/manager/products/adds#edit
+                       store_manager_products_add GET    /store/manager/products/adds/:id(.:format)                        store/manager/products/adds#show
+                                                  PUT    /store/manager/products/adds/:id(.:format)                        store/manager/products/adds#update
+                                                  DELETE /store/manager/products/adds/:id(.:format)                        store/manager/products/adds#destroy
+                           store_manager_products GET    /store/manager/products(.:format)                                 store/manager/products#index
+                                                  POST   /store/manager/products(.:format)                                 store/manager/products#create
+                        new_store_manager_product GET    /store/manager/products/new(.:format)                             store/manager/products#new
+                       edit_store_manager_product GET    /store/manager/products/:id/edit(.:format)                        store/manager/products#edit
+                            store_manager_product GET    /store/manager/products/:id(.:format)                             store/manager/products#show
+                                                  PUT    /store/manager/products/:id(.:format)                             store/manager/products#update
+                                                  DELETE /store/manager/products/:id(.:format)                             store/manager/products#destroy
+                           store_manager_policies GET    /store/manager/policies(.:format)                                 store/manager/policies#index
+                                                  POST   /store/manager/policies(.:format)                                 store/manager/policies#create
+                         new_store_manager_policy GET    /store/manager/policies/new(.:format)                             store/manager/policies#new
+                        edit_store_manager_policy GET    /store/manager/policies/:id/edit(.:format)                        store/manager/policies#edit
+                             store_manager_policy GET    /store/manager/policies/:id(.:format)                             store/manager/policies#show
+                                                  PUT    /store/manager/policies/:id(.:format)                             store/manager/policies#update
+                                                  DELETE /store/manager/policies/:id(.:format)                             store/manager/policies#destroy
+                           store_manager_settings GET    /store/manager/settings(.:format)                                 store/manager/settings#index
+                                                  POST   /store/manager/settings(.:format)                                 store/manager/settings#create
+                        new_store_manager_setting GET    /store/manager/settings/new(.:format)                             store/manager/settings#new
+                       edit_store_manager_setting GET    /store/manager/settings/:id/edit(.:format)                        store/manager/settings#edit
+                            store_manager_setting GET    /store/manager/settings/:id(.:format)                             store/manager/settings#show
+                                                  PUT    /store/manager/settings/:id(.:format)                             store/manager/settings#update
+                                                  DELETE /store/manager/settings/:id(.:format)                             store/manager/settings#destroy
+                            store_manager_indices GET    /store/manager/indices(.:format)                                  store/manager/indices#index
+                                                  POST   /store/manager/indices(.:format)                                  store/manager/indices#create
+                          new_store_manager_index GET    /store/manager/indices/new(.:format)                              store/manager/indices#new
+                         edit_store_manager_index GET    /store/manager/indices/:id/edit(.:format)                         store/manager/indices#edit
+                              store_manager_index GET    /store/manager/indices/:id(.:format)                              store/manager/indices#show
+                                                  PUT    /store/manager/indices/:id(.:format)                              store/manager/indices#update
+                                                  DELETE /store/manager/indices/:id(.:format)                              store/manager/indices#destroy
+                                  store_registers GET    /store/registers(.:format)                                        store/registers#index
+                                                  POST   /store/registers(.:format)                                        store/registers#create
+                               new_store_register GET    /store/registers/new(.:format)                                    store/registers#new
+                              edit_store_register GET    /store/registers/:id/edit(.:format)                               store/registers#edit
+                                   store_register GET    /store/registers/:id(.:format)                                    store/registers#show
+                                                  PUT    /store/registers/:id(.:format)                                    store/registers#update
+                                                  DELETE /store/registers/:id(.:format)                                    store/registers#destroy
+                 store_policies_information_index GET    /store/policies/information(.:format)                             store/policies/information#index
+                                                  POST   /store/policies/information(.:format)                             store/policies/information#create
+                   new_store_policies_information GET    /store/policies/information/new(.:format)                         store/policies/information#new
+                  edit_store_policies_information GET    /store/policies/information/:id/edit(.:format)                    store/policies/information#edit
+                       store_policies_information GET    /store/policies/information/:id(.:format)                         store/policies/information#show
+                                                  PUT    /store/policies/information/:id(.:format)                         store/policies/information#update
+                                                  DELETE /store/policies/information/:id(.:format)                         store/policies/information#destroy
+                               store_policies_ads GET    /store/policies/ads(.:format)                                     store/policies/ads#index
+                                                  POST   /store/policies/ads(.:format)                                     store/policies/ads#create
+                            new_store_policies_ad GET    /store/policies/ads/new(.:format)                                 store/policies/ads#new
+                           edit_store_policies_ad GET    /store/policies/ads/:id/edit(.:format)                            store/policies/ads#edit
+                                store_policies_ad GET    /store/policies/ads/:id(.:format)                                 store/policies/ads#show
+                                                  PUT    /store/policies/ads/:id(.:format)                                 store/policies/ads#update
+                                                  DELETE /store/policies/ads/:id(.:format)                                 store/policies/ads#destroy
+                                   store_policies GET    /store/policies(.:format)                                         store/policies#index
+                                                  POST   /store/policies(.:format)                                         store/policies#create
+                                 new_store_policy GET    /store/policies/new(.:format)                                     store/policies#new
+                                edit_store_policy GET    /store/policies/:id/edit(.:format)                                store/policies#edit
+                                     store_policy GET    /store/policies/:id(.:format)                                     store/policies#show
+                                                  PUT    /store/policies/:id(.:format)                                     store/policies#update
+                                                  DELETE /store/policies/:id(.:format)                                     store/policies#destroy
+                           store_indices_products GET    /store/indices/products(.:format)                                 store/indices/products#index
+                                                  POST   /store/indices/products(.:format)                                 store/indices/products#create
+                        new_store_indices_product GET    /store/indices/products/new(.:format)                             store/indices/products#new
+                       edit_store_indices_product GET    /store/indices/products/:id/edit(.:format)                        store/indices/products#edit
+                            store_indices_product GET    /store/indices/products/:id(.:format)                             store/indices/products#show
+                                                  PUT    /store/indices/products/:id(.:format)                             store/indices/products#update
+                                                  DELETE /store/indices/products/:id(.:format)                             store/indices/products#destroy
+                  store_indices_information_index GET    /store/indices/information(.:format)                              store/indices/information#index
+                                                  POST   /store/indices/information(.:format)                              store/indices/information#create
+                    new_store_indices_information GET    /store/indices/information/new(.:format)                          store/indices/information#new
+                   edit_store_indices_information GET    /store/indices/information/:id/edit(.:format)                     store/indices/information#edit
+                        store_indices_information GET    /store/indices/information/:id(.:format)                          store/indices/information#show
+                                                  PUT    /store/indices/information/:id(.:format)                          store/indices/information#update
+                                                  DELETE /store/indices/information/:id(.:format)                          store/indices/information#destroy
+                                store_indices_ads GET    /store/indices/ads(.:format)                                      store/indices/ads#index
+                                                  POST   /store/indices/ads(.:format)                                      store/indices/ads#create
+                             new_store_indices_ad GET    /store/indices/ads/new(.:format)                                  store/indices/ads#new
+                            edit_store_indices_ad GET    /store/indices/ads/:id/edit(.:format)                             store/indices/ads#edit
+                                 store_indices_ad GET    /store/indices/ads/:id(.:format)                                  store/indices/ads#show
+                                                  PUT    /store/indices/ads/:id(.:format)                                  store/indices/ads#update
+                                                  DELETE /store/indices/ads/:id(.:format)                                  store/indices/ads#destroy
+                                    store_indices GET    /store/indices(.:format)                                          store/indices#index
+                                                  POST   /store/indices(.:format)                                          store/indices#create
+                                  new_store_index GET    /store/indices/new(.:format)                                      store/indices#new
+                                 edit_store_index GET    /store/indices/:id/edit(.:format)                                 store/indices#edit
+                                      store_index GET    /store/indices/:id(.:format)                                      store/indices#show
+                                                  PUT    /store/indices/:id(.:format)                                      store/indices#update
+                                                  DELETE /store/indices/:id(.:format)                                      store/indices#destroy
+                                      home_stores GET    /home/stores(.:format)                                            home/stores#index
+                                                  POST   /home/stores(.:format)                                            home/stores#create
+                                   new_home_store GET    /home/stores/new(.:format)                                        home/stores#new
+                                  edit_home_store GET    /home/stores/:id/edit(.:format)                                   home/stores#edit
+                                       home_store GET    /home/stores/:id(.:format)                                        home/stores#show
+                                                  PUT    /home/stores/:id(.:format)                                        home/stores#update
+                                                  DELETE /home/stores/:id(.:format)                                        home/stores#destroy
+                                  home_promotions GET    /home/promotions(.:format)                                        home/promotions#index
+                                                  POST   /home/promotions(.:format)                                        home/promotions#create
+                               new_home_promotion GET    /home/promotions/new(.:format)                                    home/promotions#new
+                              edit_home_promotion GET    /home/promotions/:id/edit(.:format)                               home/promotions#edit
+                                   home_promotion GET    /home/promotions/:id(.:format)                                    home/promotions#show
+                                                  PUT    /home/promotions/:id(.:format)                                    home/promotions#update
+                                                  DELETE /home/promotions/:id(.:format)                                    home/promotions#destroy
+                                      home_events GET    /home/events(.:format)                                            home/events#index
+                                                  POST   /home/events(.:format)                                            home/events#create
+                                   new_home_event GET    /home/events/new(.:format)                                        home/events#new
+                                  edit_home_event GET    /home/events/:id/edit(.:format)                                   home/events#edit
+                                       home_event GET    /home/events/:id(.:format)                                        home/events#show
+                                                  PUT    /home/events/:id(.:format)                                        home/events#update
+                                                  DELETE /home/events/:id(.:format)                                        home/events#destroy
+                                home_searches_ads GET    /home/searches/ads(.:format)                                      home/searches/ads#index
+                                                  POST   /home/searches/ads(.:format)                                      home/searches/ads#create
+                             new_home_searches_ad GET    /home/searches/ads/new(.:format)                                  home/searches/ads#new
+                            edit_home_searches_ad GET    /home/searches/ads/:id/edit(.:format)                             home/searches/ads#edit
+                                 home_searches_ad GET    /home/searches/ads/:id(.:format)                                  home/searches/ads#show
+                                                  PUT    /home/searches/ads/:id(.:format)                                  home/searches/ads#update
+                                                  DELETE /home/searches/ads/:id(.:format)                                  home/searches/ads#destroy
+                           home_searches_products GET    /home/searches/products(.:format)                                 home/searches/products#index
+                                                  POST   /home/searches/products(.:format)                                 home/searches/products#create
+                        new_home_searches_product GET    /home/searches/products/new(.:format)                             home/searches/products#new
+                       edit_home_searches_product GET    /home/searches/products/:id/edit(.:format)                        home/searches/products#edit
+                            home_searches_product GET    /home/searches/products/:id(.:format)                             home/searches/products#show
+                                                  PUT    /home/searches/products/:id(.:format)                             home/searches/products#update
+                                                  DELETE /home/searches/products/:id(.:format)                             home/searches/products#destroy
+                           home_searches_messages GET    /home/searches/messages(.:format)                                 home/searches/messages#index
+                                                  POST   /home/searches/messages(.:format)                                 home/searches/messages#create
+                        new_home_searches_message GET    /home/searches/messages/new(.:format)                             home/searches/messages#new
+                       edit_home_searches_message GET    /home/searches/messages/:id/edit(.:format)                        home/searches/messages#edit
+                            home_searches_message GET    /home/searches/messages/:id(.:format)                             home/searches/messages#show
+                                                  PUT    /home/searches/messages/:id(.:format)                             home/searches/messages#update
+                                                  DELETE /home/searches/messages/:id(.:format)                             home/searches/messages#destroy
+                         home_categories_products GET    /home/categories/products(.:format)                               home/categories/products#index
+                                                  POST   /home/categories/products(.:format)                               home/categories/products#create
+                      new_home_categories_product GET    /home/categories/products/new(.:format)                           home/categories/products#new
+                     edit_home_categories_product GET    /home/categories/products/:id/edit(.:format)                      home/categories/products#edit
+                          home_categories_product GET    /home/categories/products/:id(.:format)                           home/categories/products#show
+                                                  PUT    /home/categories/products/:id(.:format)                           home/categories/products#update
+                                                  DELETE /home/categories/products/:id(.:format)                           home/categories/products#destroy
+                             home_categories_subs GET    /home/categories/subs(.:format)                                   home/categories/subs#index
+                                                  POST   /home/categories/subs(.:format)                                   home/categories/subs#create
+                          new_home_categories_sub GET    /home/categories/subs/new(.:format)                               home/categories/subs#new
+                         edit_home_categories_sub GET    /home/categories/subs/:id/edit(.:format)                          home/categories/subs#edit
+                              home_categories_sub GET    /home/categories/subs/:id(.:format)                               home/categories/subs#show
+                                                  PUT    /home/categories/subs/:id(.:format)                               home/categories/subs#update
+                                                  DELETE /home/categories/subs/:id(.:format)                               home/categories/subs#destroy
+                       home_categories_categories GET    /home/categories/categories(.:format)                             home/categories/categories#index
+                                                  POST   /home/categories/categories(.:format)                             home/categories/categories#create
+                     new_home_categories_category GET    /home/categories/categories/new(.:format)                         home/categories/categories#new
+                    edit_home_categories_category GET    /home/categories/categories/:id/edit(.:format)                    home/categories/categories#edit
+                         home_categories_category GET    /home/categories/categories/:id(.:format)                         home/categories/categories#show
+                                                  PUT    /home/categories/categories/:id(.:format)                         home/categories/categories#update
+                                                  DELETE /home/categories/categories/:id(.:format)                         home/categories/categories#destroy
+                                 home_indices_ads GET    /home/indices/ads(.:format)                                       home/indices/ads#index
+                                                  POST   /home/indices/ads(.:format)                                       home/indices/ads#create
+                              new_home_indices_ad GET    /home/indices/ads/new(.:format)                                   home/indices/ads#new
+                             edit_home_indices_ad GET    /home/indices/ads/:id/edit(.:format)                              home/indices/ads#edit
+                                  home_indices_ad GET    /home/indices/ads/:id(.:format)                                   home/indices/ads#show
+                                                  PUT    /home/indices/ads/:id(.:format)                                   home/indices/ads#update
+                                                  DELETE /home/indices/ads/:id(.:format)                                   home/indices/ads#destroy
+                               home_indices_shops GET    /home/indices/shops(.:format)                                     home/indices/shops#index
+                                                  POST   /home/indices/shops(.:format)                                     home/indices/shops#create
+                            new_home_indices_shop GET    /home/indices/shops/new(.:format)                                 home/indices/shops#new
+                           edit_home_indices_shop GET    /home/indices/shops/:id/edit(.:format)                            home/indices/shops#edit
+                                home_indices_shop GET    /home/indices/shops/:id(.:format)                                 home/indices/shops#show
+                                                  PUT    /home/indices/shops/:id(.:format)                                 home/indices/shops#update
+                                                  DELETE /home/indices/shops/:id(.:format)                                 home/indices/shops#destroy
+                          home_indices_categories GET    /home/indices/categories(.:format)                                home/indices/categories#index
+                                                  POST   /home/indices/categories(.:format)                                home/indices/categories#create
+                        new_home_indices_category GET    /home/indices/categories/new(.:format)                            home/indices/categories#new
+                       edit_home_indices_category GET    /home/indices/categories/:id/edit(.:format)                       home/indices/categories#edit
+                            home_indices_category GET    /home/indices/categories/:id(.:format)                            home/indices/categories#show
+                                                  PUT    /home/indices/categories/:id(.:format)                            home/indices/categories#update
+                                                  DELETE /home/indices/categories/:id(.:format)                            home/indices/categories#destroy
+                            home_indices_products GET    /home/indices/products(.:format)                                  home/indices/products#index
+                                                  POST   /home/indices/products(.:format)                                  home/indices/products#create
+                         new_home_indices_product GET    /home/indices/products/new(.:format)                              home/indices/products#new
+                        edit_home_indices_product GET    /home/indices/products/:id/edit(.:format)                         home/indices/products#edit
+                             home_indices_product GET    /home/indices/products/:id(.:format)                              home/indices/products#show
+                                                  PUT    /home/indices/products/:id(.:format)                              home/indices/products#update
+                                                  DELETE /home/indices/products/:id(.:format)                              home/indices/products#destroy
+                                                  GET    /home/indices/categories(.:format)                                home/indices/categories#index
+                                                  POST   /home/indices/categories(.:format)                                home/indices/categories#create
+                                                  GET    /home/indices/categories/new(.:format)                            home/indices/categories#new
+                                                  GET    /home/indices/categories/:id/edit(.:format)                       home/indices/categories#edit
+                                                  GET    /home/indices/categories/:id(.:format)                            home/indices/categories#show
+                                                  PUT    /home/indices/categories/:id(.:format)                            home/indices/categories#update
+                                                  DELETE /home/indices/categories/:id(.:format)                            home/indices/categories#destroy
+                                     home_indices GET    /home/indices(.:format)                                           home/indices#index
+                                                  POST   /home/indices(.:format)                                           home/indices#create
+                                   new_home_index GET    /home/indices/new(.:format)                                       home/indices#new
+                                  edit_home_index GET    /home/indices/:id/edit(.:format)                                  home/indices#edit
+                                       home_index GET    /home/indices/:id(.:format)                                       home/indices#show
+                                                  PUT    /home/indices/:id(.:format)                                       home/indices#update
+                                                  DELETE /home/indices/:id(.:format)                                       home/indices#destroy
+                                  home_categories GET    /home/categories(.:format)                                        home/categories#index
+                                                  POST   /home/categories(.:format)                                        home/categories#create
+                                new_home_category GET    /home/categories/new(.:format)                                    home/categories#new
+                               edit_home_category GET    /home/categories/:id/edit(.:format)                               home/categories#edit
+                                    home_category GET    /home/categories/:id(.:format)                                    home/categories#show
+                                                  PUT    /home/categories/:id(.:format)                                    home/categories#update
+                                                  DELETE /home/categories/:id(.:format)                                    home/categories#destroy
+                                    home_searches GET    /home/searches(.:format)                                          home/searches#index
+                                                  POST   /home/searches(.:format)                                          home/searches#create
+                                  new_home_search GET    /home/searches/new(.:format)                                      home/searches#new
+                                 edit_home_search GET    /home/searches/:id/edit(.:format)                                 home/searches#edit
+                                      home_search GET    /home/searches/:id(.:format)                                      home/searches#show
+                                                  PUT    /home/searches/:id(.:format)                                      home/searches#update
+                                                  DELETE /home/searches/:id(.:format)                                      home/searches#destroy

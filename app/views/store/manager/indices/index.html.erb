@@ -1,0 +1,21 @@
+<h1>Listing store_manager_indices</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @store_manager_indices.each do |store_manager_index| %>
+  <tr>
+    <td><%= link_to 'Show', store_manager_index %></td>
+    <td><%= link_to 'Edit', edit_store_manager_index_path(store_manager_index) %></td>
+    <td><%= link_to 'Destroy', store_manager_index, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Index', new_store_manager_index_path %>

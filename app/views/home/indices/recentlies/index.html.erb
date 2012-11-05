@@ -1,0 +1,21 @@
+<h1>Listing home_indices_recentlies</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @home_indices_recentlies.each do |home_indices_recently| %>
+  <tr>
+    <td><%= link_to 'Show', home_indices_recently %></td>
+    <td><%= link_to 'Edit', edit_home_indices_recently_path(home_indices_recently) %></td>
+    <td><%= link_to 'Destroy', home_indices_recently, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Recently', new_home_indices_recently_path %>

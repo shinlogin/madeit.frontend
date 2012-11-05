@@ -1,0 +1,21 @@
+<h1>Listing home_categories</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @home_categories.each do |home_category| %>
+  <tr>
+    <td><%= link_to 'Show', home_category %></td>
+    <td><%= link_to 'Edit', edit_home_category_path(home_category) %></td>
+    <td><%= link_to 'Destroy', home_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Category', new_home_category_path %>

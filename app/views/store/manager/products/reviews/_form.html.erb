@@ -1,0 +1,17 @@
+<%= form_for(@store_manager_products_review) do |f| %>
+  <% if @store_manager_products_review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@store_manager_products_review.errors.count, "error") %> prohibited this store_manager_products_review from being saved:</h2>
+
+      <ul>
+      <% @store_manager_products_review.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+<h1>Listing store_indices_information</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @store_indices_information.each do |store_indices_information| %>
+  <tr>
+    <td><%= link_to 'Show', store_indices_information %></td>
+    <td><%= link_to 'Edit', edit_store_indices_information_path(store_indices_information) %></td>
+    <td><%= link_to 'Destroy', store_indices_information, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Information', new_store_indices_information_path %>

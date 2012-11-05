@@ -1,0 +1,21 @@
+<h1>Listing home_cart_successes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @home_cart_successes.each do |home_cart_success| %>
+  <tr>
+    <td><%= link_to 'Show', home_cart_success %></td>
+    <td><%= link_to 'Edit', edit_home_cart_success_path(home_cart_success) %></td>
+    <td><%= link_to 'Destroy', home_cart_success, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Success', new_home_cart_success_path %>

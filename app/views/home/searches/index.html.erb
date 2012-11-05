@@ -1,0 +1,21 @@
+<h1>Listing home_searches</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @home_searches.each do |home_search| %>
+  <tr>
+    <td><%= link_to 'Show', home_search %></td>
+    <td><%= link_to 'Edit', edit_home_search_path(home_search) %></td>
+    <td><%= link_to 'Destroy', home_search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Search', new_home_search_path %>

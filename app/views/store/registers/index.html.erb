@@ -1,0 +1,21 @@
+<h1>Listing store_registers</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @store_registers.each do |store_register| %>
+  <tr>
+    <td><%= link_to 'Show', store_register %></td>
+    <td><%= link_to 'Edit', edit_store_register_path(store_register) %></td>
+    <td><%= link_to 'Destroy', store_register, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Register', new_store_register_path %>

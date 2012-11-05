@@ -1,0 +1,21 @@
+<h1>Listing store_manager_messages_unreads</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @store_manager_messages_unreads.each do |store_manager_messages_unread| %>
+  <tr>
+    <td><%= link_to 'Show', store_manager_messages_unread %></td>
+    <td><%= link_to 'Edit', edit_store_manager_messages_unread_path(store_manager_messages_unread) %></td>
+    <td><%= link_to 'Destroy', store_manager_messages_unread, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Unread', new_store_manager_messages_unread_path %>

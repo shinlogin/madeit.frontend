@@ -1,0 +1,21 @@
+<h1>Listing home_categories_products_indices_shops</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @home_categories_products_indices_shops.each do |home_categories_products_indices_shop| %>
+  <tr>
+    <td><%= link_to 'Show', home_categories_products_indices_shop %></td>
+    <td><%= link_to 'Edit', edit_home_categories_products_indices_shop_path(home_categories_products_indices_shop) %></td>
+    <td><%= link_to 'Destroy', home_categories_products_indices_shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shop', new_home_categories_products_indices_shop_path %>

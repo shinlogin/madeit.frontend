@@ -1,0 +1,21 @@
+<h1>Listing stores_reports</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @stores_reports.each do |stores_report| %>
+  <tr>
+    <td><%= link_to 'Show', stores_report %></td>
+    <td><%= link_to 'Edit', edit_stores_report_path(stores_report) %></td>
+    <td><%= link_to 'Destroy', stores_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Report', new_stores_report_path %>

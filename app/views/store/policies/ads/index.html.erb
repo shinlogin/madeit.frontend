@@ -1,0 +1,21 @@
+<h1>Listing store_policies_ads</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @store_policies_ads.each do |store_policies_ad| %>
+  <tr>
+    <td><%= link_to 'Show', store_policies_ad %></td>
+    <td><%= link_to 'Edit', edit_store_policies_ad_path(store_policies_ad) %></td>
+    <td><%= link_to 'Destroy', store_policies_ad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ad', new_store_policies_ad_path %>
